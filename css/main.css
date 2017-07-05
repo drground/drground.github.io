@@ -1,5 +1,5 @@
 body{background:#EFEAE6}
-ul {letter-spacing:2.1px}
+/*ul {letter-spacing:2.1px}*/
 a:link{
 text-decoration: none;
 padding-bottom: 14px
@@ -7,7 +7,8 @@ padding-bottom: 14px
 */}
 
 a:hover, a:active{background:#5BA848; color:white}
-li, h2 { font-size:32px;font-size: large;font-weight: bolder;
+li, h2 { 
+  font-size:32px;font-size: large;font-weight: bolder;
 }
 
 li:nth-child(odd) {background: #bdbdbd}
