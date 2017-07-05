@@ -1,12 +1,19 @@
+body{background:#EFEAE6}
+ul {letter-spacing:2.1px}
 a:link{
 text-decoration: none;
-border-bottom: thick dotted blue;
+padding-bottom: 14px
+/*border-bottom: thick dotted blue;
+*/}
+
+a:hover, a:active{background:#5BA848; color:white}
+li, h2 { font-size:32px;font-size: large;font-weight: bolder;
 }
 
-li, h2 { font-size:35px;font-size: large;font-weight: bolder;
-padding-bottom: 14px;}
+li:nth-child(odd) {background: #bdbdbd}
+li {list-style-type:none}
+li a {display:block}
 
-li:nth-child(odd) {background: lightgrey}
 @media screen and (max-width: 500px) {
 ul {
 text-align: center;
