@@ -1,16 +1,27 @@
-﻿<!Doctype html>
+<!Doctype html>
 <head>
  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title> 目錄
 </title>
-<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
 <base target="_blank" />
+<style>
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+#top { position:fixed; right: 2%;
+  top: 2%;}
+</style>
 </head>
 <body>
-<h2>揭地寶 人體接地睡眠 地球身心科學能量 保健養生專門店</h2>
+<a id="top" href="#h2" target="_self">頂</a>
+<h2 id="h2">揭地寶 人體接地睡眠 地球身心科學能量 保健養生專門店</h2>
 <hr>
+<p id="ja">
+</p>
 <br>
 <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
 <div class="cate_s"><img src="http://img.pcstore.com.tw/web_img/supimg/storepink_66.gif" alt="" width="15" height="15" align="absMiddle" border="0" hspace="3" />** 速成館 [入門必逛--快速總覽]</div>
@@ -99,6 +110,38 @@
 <li><a href="http://www.pcstore.com.tw/earthingsleep/S0199R1.htm">8).人接地~實測案例</a></li>
 <li><a href="http://www.pcstore.com.tw/earthingsleep/S019MAK.htm">9).植物盆栽接地~長更好!</a></li>
 </ul>
+<footer>
+<hr>
+<p><a href="catalog-en.html"target="_self">lang=En</a></p>
+</footer>
+<script>
+function create(name, props) {
+    var el = document.createElement(name);
+    for (var p in props)
+        el[p] = props[p];
+    return el;
+}
+var msgContainer = document.createDocumentFragment();
+
+var x = document.getElementsByClassName("cate_s");
+// Set the background color of the first element with class="example" (index 0) in div
+for (var i = 0; i < x.length; ++i) {	
+	//	x[i].style.backgroundColor = "red";
+	
+	x[i].setAttribute('id', i);
+	
+	var c3 = x[i].textContent.slice(0,3);
+	msgContainer.appendChild(create("a", {
+        href : '#' + [i],
+	innerHTML : '[' + c3 + '] ',
+	target : '_self'
+    }));
+}
+
+// a jump content
+
+document.getElementById("ja").appendChild(msgContainer);
+</script>
 
 </body>
 </html>
