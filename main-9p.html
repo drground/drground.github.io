@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> grid
+</title>
+<base target="_self" />
+
+<style>
+body{background:#EFEAE6}
+
+#nine {
+	display: box; display: -webkit-inline-flex; -webkit-flex-wrap: wrap;-webkit-align-content: center; flex-end; -webkit-justify-content: center;
+	
+	display: inline-flex;
+	flex-flow: row wrap;
+	align-content: flex-end;
+	justify-content: center;
+	margin: 0px 2em;
+}
+#nine a {border-top-style:solid; text-decoration:none;
+	padding:.2em; max-height:180px;
+	overflow:hidden}
+
+#nine h3 {font-family: 標楷體;font-size:95%;
+	position: relative; z-index:2;
+	white-space: pre-line;max-width:180px;
+	color: #4169E1 ;text-align:center;
+	bottom: 150px; left: 37px; margin:-35px;
+}
+
+#nine a:hover h3 {color: #fff; background: #404040;}
+a p{ visibility:hidden;position:relative;margin:-1px; }
+a:hover p{ visibility: visible}
+
+img {width: 180px; height: 180px; overflow:hidden}
+img:hover {filter: invert(60%);}
+
+
+@media screen and (max-width: 640px) {
+body{margin:0px}
+#photos, #nine {margin: 0; justify-content: flex-start; -webkit-justify-content: flex-start;}
+#nine a{padding: 0px 4px;max-width:180px}
+#nine h3{font-size:97% ; bottom: 150px; left: 24px; margin:-35px;}
+#nine img {width: 200px;}
+footer { padding-bottom:7px }
+}
+@media screen and (max-width: 360px) {
+#nine a{padding:0; max-width:150px;}
+#nine a:nth-child(odd){ padding-right: 30px; }
+#nine a:nth-child(even){ padding-right: 30px;}
+#nine h3{font-size:100%; max-width: 110px;left: 33px;}
+footer { padding-bottom:7px }
+}
+.tab div {
+    display: none;
+}
+
+.tab div:target {
+    display: block;
+}
+.link {position:fixed; z-index:20;bottom:0;margin:0;padding-bottom:7px;background: #000}
+.link a {color:#fff; padding-right: 2px}
+.link a:hover {background:grey}
+
+footer {text-align:right}
+
+</style>
+
+
+
+
+</head>
+<body>
+<div class="tab">
+<h3 class="link">
+<a href= "#photos">首頁</a>   
+<a href="http://emfclean.com/?公司簡介,25#page">公司簡介</a>
+<a href="http://emfclean.com/?%E5%A6%82%E4%BD%95%E6%8E%A5%E5%9C%B0,45">如何接地</a>
+</h3>
+
+<div id="photos" >
+<section id="nine">
+<a href="http://emfclean.com/?1,42">
+<img src="http://img.pcstore.com.tw/~prod/M22570741_sma.jpg?pimg=static&p=1499084699">
+<h3> 1.地零您 萬用墊
+</h3>
+</a>
+
+<a href="http://emfclean.com/?2,43">
+<img src="http://img.pcstore.com.tw/~prod/M22752743_sma.jpg?pimg=static&p=1499656233">
+<h3> 2.鬆靜地伊萬用巾
+</h3>
+</a>
+<a href="http://emfclean.com/?3,44">
+<img src="http://img.pcstore.com.tw/~prod/M31052654_big.jpg?pimg=static&P=1496388125">
+<h3> 3.貼片/鬆緊環/棒
+</h3>
+</a>
+<a href="">
+<img src="https://s22.postimg.org/hiy2rt43l/image.png">
+<h3> 6.訂製品 <p>(椅類/床布/床帳
+/ 睡袋)</p></h3>
+
+</a>
+
+<a href="">
+<img src="http://img.pcstore.com.tw/~prod/M26860581_big.jpg?pimg=static&P=1498810776">
+<h3> 5.接地鞋/DIY配件 </h3></a>
+<a href="">
+<img src="http://img.pcstore.com.tw/~prod/M23577809_sma.jpg?pimg=static&P=1500288224">
+<h3> 4.檢測-儀器 </h3></a>
+<a href="">
+<img src="http://img.pcstore.com.tw/~prod/M28908284_sma.jpg?pimg=static&P=1499068545">
+<h3> 7.居家電磁波檢測 </h3></a>
+<a href="">
+<img src="http://img.pcstore.com.tw/~prod/M30267514_sma.jpg?pimg=static&P=1489971748">
+<h3> 8.電器接地 
+<p>(買線送插座) </p></h3>
+</a>
+
+<a href="">
+<img src="http://img.pcstore.com.tw/~prod/M27862780_big.jpg?pimg=static&P=1496383533">
+<h3> 9.零件/補充包 </h3></a>
+</section>
+</div>
+<div id= "link2">
+  <h3>Content to Link 2</h3>
+  <h4>Great success!</h4>
+</div>
+
+<div id="link3">
+  <h3>Content to Link 3</h3>
+  <p>Yeah!</p>
+</div>
+
+
+<footer><p>Copyright © 2017 - 2020 <a href='http://emfclean.com/?%E9%A6%96%E9%A0%81,41'>接地養生企業集團</a> 
+   _powered by <a href="https://github.com" target="_blank">github </a></p>
+</footer>
+</body>
+</html>
